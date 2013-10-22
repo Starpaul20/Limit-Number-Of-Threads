@@ -26,7 +26,7 @@ function limitthreads_info()
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
-		"version"			=> "2.0.2",
+		"version"			=> "2.0.3",
 		"guid"				=> "5691f550ad5ec10de6fd86ab2f6590c4",
 		"compatibility"		=> "16*"
 	);
@@ -76,7 +76,7 @@ function limitthreads_run()
 function limitthreads_usergroup_permission($above)
 {
 	global $mybb, $lang, $form;
-	$lang->load("limitthreads");
+	$lang->load("limitthreads", true);
 
 	if($above['title'] == $lang->posting_rating_options && $lang->posting_rating_options)
 	{
