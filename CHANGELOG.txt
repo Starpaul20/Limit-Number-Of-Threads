@@ -1,0 +1,19 @@
+2.0.3
+- Bug: Fixed language error for 1.6.11
+
+2.0.2
+- Dropped MyBB 1.4 support
+- Updated plugin with 1.6.5 plugin system updates
+- Optimization and general plugin updating
+
+2.0.1
+- Bug: Fixed bug causing 'Max Threads allowed Per Day' field to appear in several other sections of the Admin CP
+
+2.0
+- Updated plugin to work with MyBB 1.6
+
+1.0.1
+- Updated location of Usergroup setting
+
+1.0
+- Initial release
