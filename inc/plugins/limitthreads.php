@@ -1,6 +1,6 @@
 <?php
 /**
- * Limit number of Threads
+ * Limit Number of Threads
  * Copyright 2009 Starpaul20
  */
 
@@ -20,9 +20,12 @@ $plugins->add_hook("admin_user_groups_edit_commit", "limitthreads_usergroup_perm
 // The information that shows up on the plugin manager
 function limitthreads_info()
 {
+	global $lang;
+	$lang->load("limitthreads", true);
+
 	return array(
-		"name"				=> "Limit number of Threads",
-		"description"		=> "Allows you to limit the number of threads that a user in a usergroup can post in a day.",
+		"name"				=> $lang->limitthreads_info_name,
+		"description"		=> $lang->limitthreads_info_desc,
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
