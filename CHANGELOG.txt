@@ -3,22 +3,22 @@
 
 ## Version number reset for MyBB 1.8 ##
 
-2.0.3
+2.0.3 (October 22nd, 2013)
 - Bug: Fixed language error for 1.6.11
 
-2.0.2
+2.0.2 (November 25th, 2011)
 - Dropped MyBB 1.4 support
 - Updated plugin with 1.6.5 plugin system updates
 - Optimization and general plugin updating
 
-2.0.1
+2.0.1 (August 30th, 2010)
 - Bug: Fixed bug causing 'Max Threads allowed Per Day' field to appear in several other sections of the Admin CP
 
-2.0
+2.0 (August 4th, 2010)
 - Updated plugin to work with MyBB 1.6
 
-1.0.1
+1.0.1 (January 14th, 2010)
 - Updated location of Usergroup setting
 
-1.0
+1.0 (November 9th, 2009)
 - Initial release
