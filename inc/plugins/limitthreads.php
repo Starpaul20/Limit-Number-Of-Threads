@@ -64,7 +64,7 @@ function limitthreads_run()
 	// Check group limits
 	if($mybb->usergroup['maxthreadsday'] > 0)
 	{
-		$query = $db->simple_select("threads", "COUNT(*) AS thread_count", "uid='".intval($mybb->user['uid'])."' AND dateline >='".(TIME_NOW - (60*60*24))."'");
+		$query = $db->simple_select("threads", "COUNT(*) AS thread_count", "uid='".(int)$mybb->user['uid']."' AND dateline >='".(TIME_NOW - (60*60*24))."'");
 		$thread_count = $db->fetch_field($query, "thread_count");
 		if($thread_count >= $mybb->usergroup['maxthreadsday'])
 		{
@@ -91,7 +91,7 @@ function limitthreads_usergroup_permission($above)
 function limitthreads_usergroup_permission_commit()
 {
 	global $mybb, $updated_group;
-	$updated_group['maxthreadsday'] = intval($mybb->input['maxthreadsday']);
+	$updated_group['maxthreadsday'] = (int)$mybb->input['maxthreadsday'];
 }
 
 ?>
