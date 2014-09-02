@@ -1,6 +1,6 @@
 ## INFORMATION ##
 
-Limit number of Threads (2.0.3) for MyBB 1.6
+Limit number of Threads (1.0) for MyBB 1.8
 Created by: Starpaul20
 Copyright: ©2009
 License: GPL
@@ -10,6 +10,8 @@ Allows Administrators to limit the number of threads that users in a specific us
 The usergroup permission are located under the 'Posting/Rating Options?' section of the 'Forums and Posts' tab when editing a usergroup.
 
 This plugin offers full language support.
+
+The 'oldrelease' branch contains the 1.6 version of the plugin.
 
 
 ## INSTALLATION ##
