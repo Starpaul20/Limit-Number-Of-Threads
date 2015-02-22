@@ -39,7 +39,19 @@ function limitthreads_info()
 function limitthreads_activate()
 {
 	global $db, $cache;
-	$db->add_column("usergroups", "maxthreadsday", "int(3) NOT NULL default '10'");
+
+	switch($db->type)
+	{
+		case "pgsql":
+			$db->add_column("usergroups", "maxthreadsday", "int NOT NULL default '10'");
+			break;
+		case "sqlite":
+			$db->add_column("usergroups", "maxthreadsday", "int(3) NOT NULL default '10'");
+			break;
+		default:
+			$db->add_column("usergroups", "maxthreadsday", "int(3) unsigned NOT NULL default '10'");
+			break;
+	}
 
 	$cache->update_usergroups();
 }
