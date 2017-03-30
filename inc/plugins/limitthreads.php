@@ -106,5 +106,3 @@ function limitthreads_usergroup_permission_commit()
 	global $mybb, $updated_group;
 	$updated_group['maxthreadsday'] = $mybb->get_input('maxthreadsday', MyBB::INPUT_INT);
 }
-
-?>
