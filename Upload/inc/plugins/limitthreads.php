@@ -93,7 +93,7 @@ function limitthreads_usergroup_permission($above)
 	global $mybb, $lang, $form;
 	$lang->load("limitthreads", true);
 
-	if($above['title'] == $lang->posting_rating_options && $lang->posting_rating_options)
+	if(isset($lang->posting_rating_options) && $above['title'] == $lang->posting_rating_options)
 	{
 		$above['content'] .= "<div class=\"group_settings_bit\">{$lang->max_threads_per_day}:<br /><small>{$lang->max_threads_per_day_desc}</small><br /></div>".$form->generate_numeric_field('maxthreadsday', $mybb->input['maxthreadsday'], array('id' => 'maxthreadsday', 'class' => 'field50', 'min' => 0));
 	}
