@@ -1,6 +1,6 @@
 ## INFORMATION ##
 
-Limit number of Threads (1.2) for MyBB 1.8
+Limit number of Threads (1.3) for MyBB 1.8
 Created by: Starpaul20
 Copyright: ©2009
 License: GPL
